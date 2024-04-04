@@ -1,0 +1,28 @@
+<section>
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl py-20">Hospital Gallery</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <app-instrument-card img="assets/images/products/product01.jpg" title="poct 01" origin="China" />
+
+        <app-instrument-card img="assets/images/products/product04.jpg" title="poct 02" origin="Russia" />
+
+        <app-instrument-card img="assets/images/products/product05.jpg" title="poct 03" origin="USA" />
+
+
+        
+      </div>
+      <a
+        routerLink="/gallery/instrument"
+        data-aos="zoom-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        class="btn btn-primary rounded text-white capitalize px-8 font-light my-12 text-xl"
+        (click)="scrollToTop()"
+      >
+        More
+      </a>
+    </div>
+  </section>
+  
+

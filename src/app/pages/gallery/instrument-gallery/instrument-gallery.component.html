@@ -1,0 +1,22 @@
+<app-cover title="Home" sub1="Gallery" sub2="Instrument Gallery"></app-cover>
+
+<div class="container mx-auto my-24">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      @for (product of products; track $index) {
+        <app-instrument-card [img]="productImages[$index]" [title]="product.name" [origin]="product.origin" />
+        <!-- <div
+        data-aos="zoom-in"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+        class="card bg-white shadow-sm rounded">
+        <figure>
+          <img [src]="productImages[$index]" alt="product" />
+        </figure>
+        <div class="card-body pb-4">
+          <h2 class="text-xl text-left uppercase">{{ product.name }}</h2>
+          <p class="text-[#648cc3]">Origin: {{ product.origin }}</p>
+        </div>
+      </div> -->
+      }
+    </div>
+  </div>
